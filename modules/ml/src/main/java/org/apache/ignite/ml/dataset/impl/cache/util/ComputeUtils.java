@@ -56,7 +56,9 @@ import org.apache.ignite.ml.util.Utils;
 /**
  * Util class that provides common methods to perform computations on top of the Ignite Compute Grid.
  */
-public class ComputeUtils {
+public final class ComputeUtils {
+    private ComputeUtils(){}
+
     /** Template of the key used to store partition {@code data} in local storage. */
     private static final String DATA_STORAGE_KEY_TEMPLATE = "part_data_storage_%s";
 
